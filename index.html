@@ -2,23 +2,21 @@
 
 <html lang="vi">
 <head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; frame-src 'none'; connect-src 'self'; media-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="#07090d" name="theme-color"/>
 <meta content="dark" name="color-scheme"/>
-<title>NSMOD — iOS &amp; App Hub</title>
-<meta content="NSMOD — kho ứng dụng, tiện ích và bản cập nhật dành cho iOS/Android." name="description"/>
-<meta content="NSMOD, iOS, app, mod, download" name="keywords"/>
-<meta content="NSMOD" name="author"/>
+<title>HAXTOP — iOS &amp; App Hub</title>
+<meta content="HAXTOP — kho ứng dụng, tiện ích và bản cập nhật dành cho iOS/Android." name="description"/>
+<meta content="HAXTOP, iOS, app, mod, download" name="keywords"/>
+<meta content="HAXTOP" name="author"/>
 <meta content="website" property="og:type"/>
-<meta content="NSMOD — iOS &amp; App Hub" property="og:title"/>
-<meta content="Kho ứng dụng và bản cập nhật của NSMOD." property="og:description"/>
+<meta content="HAXTOP — iOS &amp; App Hub" property="og:title"/>
+<meta content="Kho ứng dụng và bản cập nhật của HAXTOP." property="og:description"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%2307090d%22/&gt;&lt;text x=%2250%22 y=%2262%22 text-anchor=%22middle%22 font-size=%2242%22 font-family=%22Arial%22 font-weight=%22700%22 fill=%22%236cf0c2%22&gt;NS&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%2307090d%22/&gt;&lt;text x=%2250%22 y=%2262%22 text-anchor=%22middle%22 font-size=%2242%22 font-family=%22Arial%22 font-weight=%22700%22 fill=%22%236cf0c2%22&gt;HT&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
 <style>
 :root {
   --bg: #07090d;
@@ -1135,6 +1133,8 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
   .ns-music-mini-actions button{min-height:32px;padding:0 7px;font-size:.65rem}
 }
 
+
+.safe-preview-disabled { opacity: .55 !important; cursor: not-allowed !important; pointer-events: none !important; }
 </style>
 </head>
 <body>
@@ -1143,14 +1143,14 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div aria-hidden="true" class="ambient ambient-two"></div>
 <header class="site-header">
 <div class="shell header-inner">
-<a aria-label="NSMOD Home" class="brand" href="#top">
-<span class="brand-mark">NS</span>
+<a aria-label="HAXTOP Home" class="brand" href="#top">
+<span class="brand-mark">HT</span>
 <span class="brand-copy">
-<strong>NSMOD</strong>
+<strong>HAXTOP</strong>
 <small>iOS &amp; App Hub</small>
 </span>
 </a>
-<nav aria-label="Các trang NSMOD" class="top-nav ns-main-nav">
+<nav aria-label="Các trang HAXTOP" class="top-nav ns-main-nav">
 <a href="#home" data-page-link="home" aria-current="page">Trang chủ</a>
 <a href="#apps" data-page-link="apps">Tải game</a>
 <a href="#favorites" data-page-link="favorites">Yêu thích <span class="ns-nav-fav-count" id="navFavCount">0</span></a>
@@ -1160,9 +1160,9 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
 <span class="status-dot"></span>
 </button>
-<a class="primary-btn header-cta" href="https://t.me/sonchoigame23" rel="noopener noreferrer" target="_blank">
+<a class="primary-btn header-cta safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
-          Kênh NSMOD
+          Kênh HAXTOP
         </a>
 </div>
 </div>
@@ -1172,15 +1172,15 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <!-- NSMOD / MUSIC: Trình phát nhỏ được ghim toàn web; xem cuối <main>. -->
 <section class="hero shell">
 <div class="hero-copy">
-<div class="eyebrow"><span></span> NSMOD / DIGITAL HUB</div>
-<h1>Kho game <em>NSMOD</em> dành cho bạn.</h1>
+<div class="eyebrow"><span></span> HAXTOP / DIGITAL HUB</div>
+<h1>Kho game <em>HAXTOP</em> dành cho bạn.</h1>
 <p class="hero-lead">Khám phá các bản game mới cập nhật, lưu ứng dụng yêu thích và tải nhanh đúng phiên bản bạn cần.</p>
 <div class="hero-actions">
 <a class="primary-btn" href="#apps">
             Xem ứng dụng
             <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
 </a>
-<a class="ghost-btn" href="https://t.me/sonchoigame23" rel="noopener noreferrer" target="_blank">Telegram @sonchoigame23</a>
+<a class="ghost-btn safe-preview-disabled" href="#safe-preview-disabled" aria-disabled="true" data-safe-preview="disabled">Kênh HAXTOP (đang tắt)</a>
 </div>
 <div class="trust-row">
 <span><i></i> Cập nhật theo giờ</span>
@@ -1191,10 +1191,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <aside class="hero-panel" id="about">
 <div class="panel-glow"></div>
 <div class="profile-line">
-<img alt="Avatar NSMOD" class="avatar" src="ICON/avt.jpg"/>
+<img alt="Avatar HAXTOP" class="avatar" src="ICON/avt.jpg"/>
 <div>
 <span class="muted">Owner / Developer</span>
-<h2>NSMOD <span class="verified">✓</span></h2>
+<h2>HAXTOP <span class="verified">✓</span></h2>
 </div>
 <span class="online-pill"><i></i> Online</span>
 </div>
@@ -1221,7 +1221,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg>
 </span>
 <div>
-<strong>NSMOD Release Center</strong>
+<strong>HAXTOP Release Center</strong>
 <p>Kiểm tra đúng tên và ngày cập nhật trước khi tải.</p>
 </div>
 </div>
@@ -1231,7 +1231,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 
 
 <section class="ns-destinations shell" aria-labelledby="nsDestinationsTitle">
-  <div class="ns-destinations-head"><span class="section-kicker">KHÁM PHÁ NSMOD</span><h2 id="nsDestinationsTitle">Bạn muốn xem gì hôm nay?</h2></div>
+  <div class="ns-destinations-head"><span class="section-kicker">KHÁM PHÁ HAXTOP</span><h2 id="nsDestinationsTitle">Bạn muốn xem gì hôm nay?</h2></div>
   <div class="ns-destination-grid">
     <a href="#apps" class="ns-destination ns-destination-apps">
       <span class="ns-destination-icon">⬇</span><span class="ns-destination-caption">THƯ VIỆN ỨNG DỤNG</span><strong>Vào trang Tải game</strong><span class="ns-destination-desc">iOS Có Key, No Key và Android • tìm theo từng game</span><span class="ns-destination-arrow">Xem ứng dụng →</span>
@@ -1246,7 +1246,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <!-- ===== NSMOD / ĐÃ XEM GẦN ĐÂY: lưu riêng trên trình duyệt ===== -->
 <section class="ns-recent-section shell" id="recentlyViewed" aria-labelledby="nsRecentTitle">
   <div class="ns-recent-header">
-    <div><span class="section-kicker">NSMOD / YOUR HISTORY</span><h2 id="nsRecentTitle">Đã xem <em>gần đây</em></h2><p>Các ứng dụng bạn vừa mở hoặc tải. Chỉ lưu trên trình duyệt này.</p></div>
+    <div><span class="section-kicker">HAXTOP / YOUR HISTORY</span><h2 id="nsRecentTitle">Đã xem <em>gần đây</em></h2><p>Các ứng dụng bạn vừa mở hoặc tải. Chỉ lưu trên trình duyệt này.</p></div>
     <button class="ns-recent-clear" id="nsRecentClear" type="button" hidden>Xóa lịch sử</button>
   </div>
   <div class="ns-recent-grid" id="nsRecentGrid" aria-live="polite"></div>
@@ -1260,18 +1260,18 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 </span>
 <div>
 <span class="section-kicker">OFFICIAL CHANNEL</span>
-<h2>Theo dõi NSMOD trên Telegram</h2>
+<h2>Theo dõi HAXTOP trên Telegram</h2>
 <p>Nhận thông báo cập nhật, link mới và hướng dẫn sử dụng.</p>
 </div>
 </div>
-<a class="primary-btn" href="https://t.me/sonchoigame23" rel="noopener noreferrer" target="_blank">Mở Telegram <span>↗</span></a>
+<a class="primary-btn safe-preview-disabled" href="#safe-preview-disabled" aria-disabled="true" data-safe-preview="disabled">Telegram đang tắt <span>↗</span></a>
 </section>
 </div>
 <div class="ns-page" data-view="apps" id="appsPage" hidden>
 <section class="apps-section shell" id="apps">
   <div class="section-head ns-library-head">
     <div>
-      <span class="section-kicker">NSMOD / GAME LIBRARY</span>
+      <span class="section-kicker">HAXTOP / GAME LIBRARY</span>
       <h2>TẢI GAME  <span class="ns-highlight">NGAY</span></h2>
       <p>Xem bản mới trước, chọn game để xem phiên bản. Tất cả tự sắp xếp theo ngày và giờ cập nhật.</p>
     </div>
@@ -1287,7 +1287,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
   <section id="latest" class="ns-latest-section" aria-labelledby="latestTitle">
     <div class="ns-latest-head">
       <div>
-        <span class="ns-latest-eyebrow"><span class="ns-latest-pulse"></span> NSMOD / NEW RELEASES</span>
+        <span class="ns-latest-eyebrow"><span class="ns-latest-pulse"></span> HAXTOP / NEW RELEASES</span>
         <h3 id="latestTitle">MỚI <span>NHẤT</span></h3>
         <p>Tự xếp theo ngày và giờ cập nhật, bấm vào để đến đúng ứng dụng.</p>
       </div>
@@ -1316,10 +1316,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
   <!-- THƯ VIỆN GAME: Tự tạo thẻ có ảnh từ từng <article class="app-card"> hiện có. -->
   <section class="ns-game-picker" id="nsGamePicker" aria-labelledby="nsGamePickerTitle">
     <div class="ns-game-picker-top">
-      <div><span class="ns-game-picker-eyebrow">DANH MỤC GAME</span><h3 id="nsGamePickerTitle">Chọn game để xem bản tải</h3><p>Chọn một game để xem các bản tải mới nhất.</p></div>
+      <div><span class="ns-game-picker-eyebrow">GAME ĐANG CÓ</span><h3 id="nsGamePickerTitle">Chọn game để xem bản tải</h3><p>Chọn một game để xem các bản tải mới nhất.</p></div>
       <span class="ns-game-picker-total" id="nsGamePickerTotal">ĐANG TẢI</span>
     </div>
-    <div class="ns-game-picker-grid" id="nsGamePickerGrid" aria-label="Danh mục game"></div>
+    <div class="ns-game-picker-grid" id="nsGamePickerGrid" aria-label="Danh sách game đang có"></div>
     <div class="ns-game-picker-no-results" id="nsGamePickerNoResults" hidden>Chưa có game phù hợp với tìm kiếm.</div>
   </section>
   <div class="ns-selected-game" id="nsSelectedGame" hidden>
@@ -1348,11 +1348,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
      goose-goose-duck = Goose Goose Duck
      wild-rift      = Liên Minh: Tốc Chiến
      zing-speed     = Zing Speed
-     valorant       = VALORANT (sẵn danh mục ngay cả khi chưa có card)
      game-khac      = Các game khác
      tft, 8bp, fc, play-tgt = các game đã có từ trước
      Muốn thêm game mới nữa? Khai báo trong `const gameDirectory` phía cuối file.
-     Các game khác cần card tải thật mới xuất hiện; riêng VALORANT hiển thị sẵn.
+     Chưa có card tải thật => game chưa xuất hiện ở khu CHỌN GAME.
      Không được chèn <button> vào #nsGamePickerGrid vì JS tự tạo icon.
 -->
 <!-- ===================================================================== -->
@@ -1394,7 +1393,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div><h3>PLAY TOGETHER MENU NEW </h3><p>Cập nhật ngày 20/11</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/639" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1415,35 +1414,32 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div><h3>THE SPIKE CROSS NO KEY </h3></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/582" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
 
 <!--DELTA FORES-->
 
-  
-
-
-<article class="app-card" data-platform="ios" data-access="no-key" data-game="delta-force" data-category="delta-force" data-name="DELTA FORCE NO KEY " data-updated="2026-11-21" data-version="" data-size="" data-description="" data-changelog="" data-history="">
+    <article class="app-card" data-platform="ios" data-access="no-key" data-game="delta-force" data-category="delta-force" data-name="THE SPIKE CROSS NO KEY " data-updated="2026-10-29" data-version="" data-size="" data-description="" data-changelog="" data-history="">
 <span class="key-status-tag has-key">1 KEY ALL BẢN</span>
-<button aria-label="Xem ảnh DELTA FORCE ALPHA" class="app-media" data-preview="ẢNH BÌA/75263b7d-c1bb-4ec2-9abd-98fa1d4d6098.jpg" data-title="DELTA FORCE CRACK " type="button">
-<img alt="DELTA FORCE" loading="lazy" src="ẢNH BÌA/75263b7d-c1bb-4ec2-9abd-98fa1d4d6098.jpg"/>
+<button aria-label="Xem ảnh DELTA FORCE" class="app-media" data-preview="ẢNH BÌA/465f66bf-2329-4dd0-82a9-b36f081d91e3.jpg" data-title="DELTA FORCE CRRK " type="button">
+<img alt="DELTA FORCE" loading="lazy" src="ẢNH BÌA/465f66bf-2329-4dd0-82a9-b36f081d91e3.jpg"/>
 <span class="platform-chip"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16.7 13.2c0-3 2.5-4.5 2.6-4.6a5.6 5.6 0 0 0-4.4-2.4c-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1-2.1 0-4.1 1.2-5.2 3.1-2.2 3.8-.6 9.4 1.6 12.5 1.1 1.5 2.3 3.2 4 3.1 1.6-.1 2.2-1 4.2-1 1.9 0 2.5 1 4.2 1 1.7 0 2.8-1.5 3.9-3 1.2-1.8 1.7-3.5 1.7-3.6-.1 0-3.8-1.5-3.8-5.2ZM13.7 4.2A5.1 5.1 0 0 0 14.9.5a5.2 5.2 0 0 0-3.5 1.8 4.8 4.8 0 0 0-1.2 3.6 4.3 4.3 0 0 0 3.5-1.7Z"></path></svg> iOS</span>
 </button>
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/DELTA.jpg"/>
-<div><h3>DELTA FORCE ALPHA 25/11 </h3></div>
+<div><h3>DELTA FORCE NO KEY </h3></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/cracknsmod/138" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
 
 
-<!--GGD CRACK VIP-->
+<!--GGD CRRK VIP-->
 
 
 <article class="app-card" data-platform="ios" data-access="no-key" data-game="goose-goose-duck" data-category="goose-goose-duck" data-name="GOOSE GOOSE DUCK PRO " data-updated="2026-10-29" data-version="" data-size="" data-description="" data-changelog="" data-history="">
@@ -1455,10 +1451,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/GGD.webp"/>
-<div><h3>CRACK GGD PRO </h3></div>
+<div><h3>crrk GGD PRO </h3></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/617" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1474,10 +1470,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/GGD.webp"/>
-<div><h3>CRACK GGD LITE  </h3></div>
+<div><h3>crrk GGD LITE  </h3></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/588" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1494,10 +1490,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/TC.jpg"/>
-<div><h3> CRACK MENU SHARK TC   </h3></div>
+<div><h3> crrk MENU SHARK TC   </h3></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/cracknsmod/63" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1511,10 +1507,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 
     <!-- ============== GAME: ĐẤU TRƯỜNG CHÂN LÝ | data-game="tft" ============== -->
     <!-- THÊM CARD ĐẤU TRƯỜNG CHÂN LÝ MỚI NGAY DƯỚI COMMENT NÀY (đúng loại nền tảng). -->
-<article class="app-card" data-platform="ios" data-access="key" data-game="tft" data-category="TFT" data-name="TFT ĐẤU TRƯỜNG CL " data-updated="2026-11-22T11:02" data-version="" data-size="" data-description="" data-changelog="" data-history="">
+<article class="app-card" data-platform="ios" data-access="key" data-game="tft" data-category="TFT" data-name="TFT ĐẤU TRƯỜNG CL " data-updated="2026-10-29" data-version="" data-size="" data-description="" data-changelog="" data-history="">
 <span class="key-status-tag has-key">1 KEY ALL BẢN</span>
-<button aria-label="Xem ảnh TFT ĐẤU TRƯỜNG CL" class="app-media" data-preview="ẢNH BÌA/0de4dbc2-f961-49b0-9e3a-9fe38aae0eb5.jpg" data-title="TFT ĐẤU TRƯỜNG CL" type="button">
-<img alt="TFT NO KEY" loading="lazy" src="ẢNH BÌA/0de4dbc2-f961-49b0-9e3a-9fe38aae0eb5.jpg"/>
+<button aria-label="Xem ảnh TFT ĐẤU TRƯỜNG CL" class="app-media" data-preview="ẢNH BÌA/ecc70f74-e11e-457b-ab6b-66db2d637ee6.jpg" data-title="TFT ĐẤU TRƯỜNG CL" type="button">
+<img alt="MENU AOV MOD V2" loading="lazy" src="ẢNH BÌA/ecc70f74-e11e-457b-ab6b-66db2d637ee6.jpg"/>
 <span class="platform-chip"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16.7 13.2c0-3 2.5-4.5 2.6-4.6a5.6 5.6 0 0 0-4.4-2.4c-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1-2.1 0-4.1 1.2-5.2 3.1-2.2 3.8-.6 9.4 1.6 12.5 1.1 1.5 2.3 3.2 4 3.1 1.6-.1 2.2-1 4.2-1 1.9 0 2.5 1 4.2 1 1.7 0 2.8-1.5 3.9-3 1.2-1.8 1.7-3.5 1.7-3.6-.1 0-3.8-1.5-3.8-5.2ZM13.7 4.2A5.1 5.1 0 0 0 14.9.5a5.2 5.2 0 0 0-3.5 1.8 4.8 4.8 0 0 0-1.2 3.6 4.3 4.3 0 0 0 3.5-1.7Z"></path></svg> iOS</span>
 </button>
 <div class="app-body">
@@ -1523,59 +1519,12 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div><h3>TFT ĐẤU TRƯỜNG CL </h3><p>Cập nhật ngày 29/10</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/660" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
+<a class="key-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="8" cy="15" r="4"></circle><path d="M11 12l8-8"></path><path d="M16 7l2 2"></path><path d="M14 9l2 2"></path></svg> Lấy key</a>
 </div>
 </div>
 </article>
     <!-- ============== HẾT GAME ĐẤU TRƯỜNG CHÂN LÝ ============== -->
-
-
-
-    <!--PUBG-->
-
-
-    <article class="app-card" data-platform="ios" data-access="no-key" data-game="pubg" data-category="PAKPUBG" data-name="CRACK PAK PUBG " data-updated="2026-11-22T11:03" data-version="" data-size="" data-description="" data-changelog="" data-history="">
-<span class="key-status-tag has-key">1 KEY ALL BẢN</span>
-<button aria-label="Xem ảnh CRACK PAK PUBG " class="app-media" data-preview="ẢNH BÌA/644222da-eb9a-4a90-8946-3b5c19213d16.jpg" data-title="CRACK PAK PUBG" type="button">
-<img alt="TFT NO KEY" loading="lazy" src="ẢNH BÌA/644222da-eb9a-4a90-8946-3b5c19213d16.jpg"/>
-<span class="platform-chip"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16.7 13.2c0-3 2.5-4.5 2.6-4.6a5.6 5.6 0 0 0-4.4-2.4c-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1-2.1 0-4.1 1.2-5.2 3.1-2.2 3.8-.6 9.4 1.6 12.5 1.1 1.5 2.3 3.2 4 3.1 1.6-.1 2.2-1 4.2-1 1.9 0 2.5 1 4.2 1 1.7 0 2.8-1.5 3.9-3 1.2-1.8 1.7-3.5 1.7-3.6-.1 0-3.8-1.5-3.8-5.2ZM13.7 4.2A5.1 5.1 0 0 0 14.9.5a5.2 5.2 0 0 0-3.5 1.8 4.8 4.8 0 0 0-1.2 3.6 4.3 4.3 0 0 0 3.5-1.7Z"></path></svg> iOS</span>
-</button>
-<div class="app-body">
-<div class="app-title-row">
-<img alt="" class="app-icon" loading="lazy" src="ICON/PUBG.webp"/>
-<div><h3>CRACK PAK PUBG </h3><p>Cập nhật ngày 22/11</p></div>
-</div>
-<div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/596" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
-</div>
-</div>
-</article>
-
-
-<article class="app-card" data-platform="ios" data-access="no-key" data-game="pubg" data-category="SHARKPUBG" data-name="CRACK SHARK PUBG " data-updated="2026-11-22T11:04" data-version="" data-size="" data-description="" data-changelog="" data-history="">
-<span class="key-status-tag has-key">1 KEY ALL BẢN</span>
-<button aria-label="Xem ảnh CRACK PAK PUBG " class="app-media" data-preview="ẢNH BÌA/ae603656-c64e-4809-a117-dfcac5099e00.jpg" data-title="CRACK PAK PUBG" type="button">
-<img alt="CRACK SHARK PUBG " loading="lazy" src="ẢNH BÌA/ae603656-c64e-4809-a117-dfcac5099e00.jpg"/>
-<span class="platform-chip"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16.7 13.2c0-3 2.5-4.5 2.6-4.6a5.6 5.6 0 0 0-4.4-2.4c-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1-2.1 0-4.1 1.2-5.2 3.1-2.2 3.8-.6 9.4 1.6 12.5 1.1 1.5 2.3 3.2 4 3.1 1.6-.1 2.2-1 4.2-1 1.9 0 2.5 1 4.2 1 1.7 0 2.8-1.5 3.9-3 1.2-1.8 1.7-3.5 1.7-3.6-.1 0-3.8-1.5-3.8-5.2ZM13.7 4.2A5.1 5.1 0 0 0 14.9.5a5.2 5.2 0 0 0-3.5 1.8 4.8 4.8 0 0 0-1.2 3.6 4.3 4.3 0 0 0 3.5-1.7Z"></path></svg> iOS</span>
-</button>
-<div class="app-body">
-<div class="app-title-row">
-<img alt="" class="app-icon" loading="lazy" src="ICON/PUBG.webp"/>
-<div><h3>CRACK MENU SHARK  PUBG </h3><p>Cập nhật ngày 22/11</p></div>
-</div>
-<div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/606" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
-</div>
-</div>
-</article>
-
-
-<!--FREE FIRE -->
-
-
-
-
-
 
 <article class="app-card" data-platform="ios" data-access="no-key" data-game="aov" data-category="aov" data-name="BIG CHANG MENU " data-updated="2026-11-20T08:30" data-version="" data-size="" data-description="" data-changelog="" data-history="">
 <span class="key-status-tag has-key">1 KEY ALL BẢN</span>
@@ -1589,7 +1538,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div><h3>MENU BIG CHANG </h3><p>Cập nhật ngày 20/11</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/628" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1627,10 +1576,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/unnamed.png"/>
-<div><h3>2 BẢN CRACK ZINGSPEED  </h3><p>Cập nhật ngày 08/11</p></div>
+<div><h3>2 BẢN crrk ZINGSPEED  </h3><p>Cập nhật ngày 08/11</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/539" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1647,10 +1596,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/LQ.jpg"/>
-<div><h3>CRACK MENU ĐỎ VIP ANTIBAN  </h3><p>Cập nhật ngày 7/11</p></div>
+<div><h3>crrk MENU ĐỎ VIP ANTIBAN  </h3><p>Cập nhật ngày 7/11</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/530" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1668,10 +1617,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ẢNH BÌA/8-ball-pool-ios-200.webp"/>
-<div><h3>CRACK 8 BALL POOL NINJA  </h3><p>Cập nhật ngày 19/11</p></div>
+<div><h3>crrk 8 BALL POOL NINJA  </h3><p>Cập nhật ngày 19/11</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/637" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1689,10 +1638,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ẢNH BÌA/FF.webp"/>
-<div><h3>MENU CRACK IHAX FF  </h3><p>Cập nhật ngày 20/11</p></div>
+<div><h3>MENU crrk IHAX FF  </h3><p>Cập nhật ngày 20/11</p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/640" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn safe-preview-disabled" href="#safe-preview-disabled" rel="noopener noreferrer" aria-disabled="true" data-safe-preview="disabled">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
@@ -1700,50 +1649,23 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 
     <!-- ============== GAME: FC MOBILE | data-game="fc" ============== -->
     <!-- THÊM CARD FC MOBILE MỚI NGAY DƯỚI COMMENT NÀY (đúng loại nền tảng). -->
-<article class="app-card" data-platform="ios" data-access="nokey" data-game="FC" data-category="FC" data-name="CRACK FCMOBILE " data-updated="2026-11-23T:21:06" data-version="" data-size="" data-description="" data-changelog="" data-history="">
+<article class="app-card" data-platform="ios" data-access="nokey" data-game="FC" data-category="FC" data-name="CRACK FCMOBILE " data-updated="2026-11-05" data-version="" data-size="" data-description="" data-changelog="" data-history="">
 <span class="key-status-tag no-key">NO KEY</span>
-<button aria-label="Xem ảnh CRACK FCMOBILE   " class="app-media" data-preview="ẢNH BÌA/ab966cb9-72cb-4620-b696-a1e97435a622.jpg" data-title="FC MOBILE CRACK" type="button">
-<img alt="CRACK FC MOBILE " loading="eager" src="ẢNH BÌA/ab966cb9-72cb-4620-b696-a1e97435a622.jpg"/>
+<button aria-label="Xem ảnh CRACK FCMOBILE   " class="app-media" data-preview="" data-title="FC MOBILE CRACK" type="button">
+<img alt="CRACK FC MOBILE " loading="eager" src=""/>
 <span class="platform-chip"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16.7 13.2c0-3 2.5-4.5 2.6-4.6a5.6 5.6 0 0 0-4.4-2.4c-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1-2.1 0-4.1 1.2-5.2 3.1-2.2 3.8-.6 9.4 1.6 12.5 1.1 1.5 2.3 3.2 4 3.1 1.6-.1 2.2-1 4.2-1 1.9 0 2.5 1 4.2 1 1.7 0 2.8-1.5 3.9-3 1.2-1.8 1.7-3.5 1.7-3.6-.1 0-3.8-1.5-3.8-5.2ZM13.7 4.2A5.1 5.1 0 0 0 14.9.5a5.2 5.2 0 0 0-3.5 1.8 4.8 4.8 0 0 0-1.2 3.6 4.3 4.3 0 0 0 3.5-1.7Z"></path></svg> iOS</span>
 </button>
 <div class="app-body">
 <div class="app-title-row">
 <img alt="" class="app-icon" loading="lazy" src="ICON/fcmobile.jpg"/>
-<div><h3>CRACK FC MOBILE   </h3><p></p></div>
+<div><h3>ĐANG UPDATE  </h3><p></p></div>
 </div>
 <div class="app-actions">
-<a class="download-btn" href="https://t.me/sonchoigame23/672" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
+<a class="download-btn" href="" rel="noopener noreferrer" target="_blank">Tải xuống <span>↗</span></a>
 </div>
 </div>
 </article>
     <!-- ============== HẾT GAME FC MOBILE ============== -->
-
-
-    <!-- ========== VALORANT | DATA-GAME="valorant" ========== -->
-   
-  
-    <article class="app-card" data-platform="ios" data-access="nokey"
-      data-game="valorant" data-category="valorant" data-name="VALORANT iOS"
-      data-updated="2026-11-23T20:00">
-      <span class="key-status-tag no-key">NO KEY</span>
-      <button type="button" class="app-media" data-preview="ẢNH BÌA/58078294-0d39-4f4e-8747-0aa0c68defd8.jpg" data-title="VALORANT">
-        <img alt="VALORANT" loading="lazy" src="ẢNH BÌA/58078294-0d39-4f4e-8747-0aa0c68defd8.jpg">
-      </button>
-      <div class="app-body">
-        <div class="app-title-row">
-          <img alt="" class="app-icon" src="ICON/VALORANT.jpg">
-          <div><h3>CRACK VALORANT </h3><p>MENU VIP</p></div>
-        </div>
-        <div class="app-actions">
-          <a class="download-btn" href="https://t.me/sonchoigame23/669" target="_blank" rel="noopener noreferrer">Tải xuống ↗</a>
-        </div>
-      </div>
-    </article>
-
-
-    
-
-
   </div>
   <p class="ns-section-empty" hidden>Không có bản iOS no key phù hợp.</p>
 </div>
@@ -1770,7 +1692,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="ns-page" data-view="favorites" id="favoritesPage" hidden>
   <section class="shell ns-favorites-page" id="favorites" aria-labelledby="nsFavoritesTitle">
     <div class="ns-favorites-hero">
-      <span class="ns-favorites-kicker">♥ NSMOD / MY COLLECTION</span>
+      <span class="ns-favorites-kicker">♥ HAXTOP / MY COLLECTION</span>
       <h1 id="nsFavoritesTitle">GAME <em>YÊU THÍCH</em></h1>
       <p>Những ứng dụng anh em đã bấm ♥ để lưu. Tất cả nằm riêng ở đây, mở lại và tải nhanh bất cứ lúc nào trên trình duyệt này.</p>
       <div class="ns-favorites-top-actions">
@@ -1794,12 +1716,12 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <!-- Không đổi bài mặc định; chỉnh tại NS_DEFAULT_MUSIC trong JavaScript. -->
 <!-- YouTube có thể chặn phát tự động có tiếng ở một số trình duyệt. -->
 <!-- ===================================================================== -->
-<section class="ns-music-section ns-music-dock" id="music" aria-label="Điều khiển nhạc NSMOD">
+<section class="ns-music-section ns-music-dock" id="music" aria-label="Điều khiển nhạc HAXTOP">
   <div class="ns-music-shell ns-music-compact">
     <div class="ns-music-mini">
       <button type="button" class="ns-music-mini-icon" id="nsMusicToggle"
               aria-expanded="false" aria-controls="nsMusicActions"
-              aria-label="Mở điều khiển nhạc NSMOD" title="Nhạc NSMOD">
+              aria-label="Mở điều khiển nhạc HAXTOP" title="Nhạc HAXTOP">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><ellipse cx="6.5" cy="18" rx="2.5" ry="2"/><ellipse cx="18.5" cy="16" rx="2.5" ry="2"/></svg>
       </button>
       <div class="ns-music-mini-actions" id="nsMusicActions" hidden>
@@ -1810,7 +1732,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     <p class="ns-music-status ns-music-mini-status" id="nsMusicStatus" role="status" aria-live="polite">Đang kết nối nhạc...</p>
     <div class="ns-music-frame-wrap" id="nsMusicFrameWrap" aria-hidden="true">
       <div class="ns-music-placeholder" id="nsMusicPlaceholder">♫</div>
-      <iframe id="nsMusicFrame" title="Nhạc YouTube NSMOD" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" tabindex="-1" hidden></iframe>
+      <iframe id="nsMusicFrame" title="Nhạc YouTube HAXTOP" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" tabindex="-1" hidden></iframe>
     </div>
     <!-- Giữ nguyên dữ liệu bài nhạc/logic cũ; ẩn cấu hình để màn hình chỉ còn icon. -->
     <div class="ns-music-config" hidden>
@@ -1818,7 +1740,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
         <input id="nsMusicUrl" type="url" aria-label="Link nhạc YouTube" />
         <button type="submit">Phát</button>
       </form>
-      <a id="nsMusicExternal" href="https://www.youtube.com/watch?v=DRGy_rObJiI" target="_blank" rel="noopener noreferrer" tabindex="-1">YouTube</a>
+      <a id="nsMusicExternal" href="#safe-preview-disabled" rel="noopener noreferrer" tabindex="-1" class="safe-preview-disabled" aria-disabled="true" data-safe-preview="disabled">YouTube</a>
     </div>
   </div>
 </section>
@@ -1826,13 +1748,13 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 </main>
 <footer class="site-footer">
 <div class="shell footer-inner">
-<div class="footer-brand"><span class="brand-mark small">NS</span><strong>NSMOD</strong></div>
-<p>© 2026 NSMOD. Dark interface only.</p>
+<div class="footer-brand"><span class="brand-mark small">HT</span><strong>HAXTOP</strong></div>
+<p>© 2026 HAXTOP. Dark interface only.</p>
 <a href="#top">Lên đầu trang ↑</a>
 </div>
 </footer>
 
-<nav class="ns-mobile-nav" aria-label="Điều hướng nhanh NSMOD">
+<nav class="ns-mobile-nav" aria-label="Điều hướng nhanh HAXTOP">
   <a href="#home" data-page-link="home"><span>⌂</span>Trang chủ</a>
   <a href="#apps" data-page-link="apps"><span>▦</span>Tải game</a>
   <a href="#favorites" data-page-link="favorites"><span>♡</span>Yêu thích</a>
@@ -1840,12 +1762,12 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <div class="drawer-backdrop" hidden="" id="drawerBackdrop"></div>
 <aside aria-hidden="true" aria-labelledby="notificationTitle" class="notification-drawer" id="notificationDrawer">
 <div class="drawer-head">
-<div><span class="section-kicker">NSMOD</span><h2 id="notificationTitle">Thông báo</h2></div>
+<div><span class="section-kicker">HAXTOP</span><h2 id="notificationTitle">Thông báo</h2></div>
 <button aria-label="Đóng thông báo" class="icon-btn" id="notificationClose" type="button">✕</button>
 </div>
 <div class="notification-item">
 <span class="notification-icon">✓</span>
-<div><strong>Giao diện NSMOD đã sẵn sàng</strong><p>Phiên bản dark-only với bố cục mới, tối ưu cho mobile.</p><time>Hôm nay</time></div>
+<div><strong>Giao diện HAXTOP đã sẵn sàng</strong><p>Phiên bản dark-only với bố cục mới, tối ưu cho mobile.</p><time>Hôm nay</time></div>
 </div>
 </aside>
 
@@ -1926,6 +1848,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <script>
 (() => {
   'use strict';
+  const safePreviewBlockedExternalOpen = () => null;
 
   const body = document.body;
   const notificationBtn = document.getElementById('notificationBtn');
@@ -1967,7 +1890,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     atob(_z[3]);
   // DÁN LINK BÁO LỖI CHUNG VÀO ĐÂY SAU NÀY.
   // Ví dụ: Telegram / Zalo / form báo lỗi.
-  const ERROR_REPORT_URL = 'https://t.me/sonchoigame123';
+  const ERROR_REPORT_URL = '#safe-preview-disabled';
 
   let activeKeyUrl = '';
   let activeErrorUrl = '';
@@ -2058,7 +1981,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     if (!downloadModal) return;
 
     const card = keyButton.closest('.app-card');
-    const appName = card?.querySelector('h3')?.textContent?.trim() || 'NSMOD';
+    const appName = card?.querySelector('h3')?.textContent?.trim() || 'HAXTOP';
     const appSub = card?.querySelector('.app-title-row p')?.textContent?.trim() || '';
 
     activeKeyUrl = keyButton.getAttribute('href') || '';
@@ -2093,17 +2016,17 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       showDownloadMessage('Chưa có link lấy key cho ứng dụng này.');
       return;
     }
-    window.open(activeKeyUrl, '_blank', 'noopener,noreferrer');
+    safePreviewBlockedExternalOpen(activeKeyUrl, '_blank', 'noopener,noreferrer');
   });
 
   downloadPurchaseBtn?.addEventListener('click', () => {
     // Lưu tên app để người mua dễ nói đúng file khi nhắn Zalo.
-    const appName = downloadAppName?.textContent?.trim() || 'NSMOD KEY';
+    const appName = downloadAppName?.textContent?.trim() || 'HAXTOP KEY';
     try {
       sessionStorage.setItem('nsmod_buy_app', appName);
     } catch (_) {}
 
-    window.open(ZALO_BUY_URL, '_blank', 'noopener,noreferrer');
+    safePreviewBlockedExternalOpen(ZALO_BUY_URL, '_blank', 'noopener,noreferrer');
   });
 
   downloadErrorBtn?.addEventListener('click', () => {
@@ -2111,7 +2034,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       showDownloadMessage('Chưa gắn link báo lỗi. Dán URL vào ERROR_REPORT_URL trong phần JavaScript là xong.');
       return;
     }
-    window.open(activeErrorUrl, '_blank', 'noopener,noreferrer');
+    safePreviewBlockedExternalOpen(activeErrorUrl, '_blank', 'noopener,noreferrer');
   });
 
   downloadModalX?.addEventListener('click', closeDownloadModal);
@@ -2170,8 +2093,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     'delta-force':{title:'Delta Force',short:'DELTA FORCE',aliases:'delta force delta phot delta phọt df',emblem:'🎯'},
     'the-spike':{title:'The Spike',short:'THE SPIKE',aliases:'the spike the spike cross volleyball bóng chuyền',emblem:'🏐'},
     'goose-goose-duck':{title:'Goose Goose Duck',short:'GGD',aliases:'goose goose duck ggd ngong ngong vit',emblem:'🪿'},
-    'wild-rift':{title:'Liên Minh: Tốc Chiến',short:'TỐC CHIẾN',aliases:'toc chien tốc chiến wild rift league of legends lien minh toc chien lol mobile',emblem:'⚔️'},
-    'valorant':{title:'VALORANT',short:'VALO',aliases:'valorant valo valor valorantt valorant mobile valorant pc',emblem:'🎯'}
+    'wild-rift':{title:'Liên Minh: Tốc Chiến',short:'TỐC CHIẾN',aliases:'toc chien tốc chiến wild rift league of legends lien minh toc chien lol mobile',emblem:'⚔️'}
   };
   const getGameKey = card => {
     const key = toGameSlug(card.dataset.game || card.dataset.category || 'game-khac');
@@ -2189,7 +2111,6 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     if (['thespike','the-spike-cross','spike','spike-cross'].includes(key)) return 'the-spike';
     if (['goosegooseduck','ggd','goose-duck'].includes(key)) return 'goose-goose-duck';
     if (['toc-chien','lien-minh-toc-chien','wildrift','lol-wild-rift','league-of-legends-wild-rift'].includes(key)) return 'wild-rift';
-    if (['valorant','valo','val','valor','valorant-mobile','valorantmobile','valorant-pc'].includes(key)) return 'valorant';
     if (['cac-game-khac','game-khac','other-games','others'].includes(key)) return 'game-khac';
     return key || 'game-khac';
   };
@@ -2213,12 +2134,6 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     if (!entry.latestCard || stamp > entry.latest) {entry.latest = stamp;entry.latestCard = card;}
     if (card.dataset.gameCover && !entry.overrideCover) entry.overrideCover = card.dataset.gameCover;
   });
-  // VALORANT luôn là một danh mục trong Chọn game, kể cả chưa đăng card tải.
-  // Khi thêm <article data-game="valorant">, số lượng và bản mới nhất cập nhật tự động.
-  if (!gameMap.has('valorant')) {
-    gameMap.set('valorant', {key:'valorant', ...getGameInfo('valorant'), cards:[], latest:-Infinity, latestCard:null, overrideCover:''});
-  }
-  const valorantFallbackImage = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzMyMWQzNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBjMTMyNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiByeD0iMzYiIGZpbGw9InVybCgjZykiLz48cGF0aCBkPSJNMzkgNTloNDJsNDggNzkgNDgtNzloNDBsLTg4IDEzM0wzOSA1OVoiIGZpbGw9IiNmZjUyNjYiLz48cGF0aCBkPSJtMTI5IDE3MCA0NC02N2g0NGwtODggOTFaIiBmaWxsPSIjZmM4MjkwIi8+PHBhdGggZD0iTTMxIDIxM2gxOTQiIHN0cm9rZT0iI2ZmNTI2NiIgc3Ryb2tlLW9wYWNpdHk9Ii40NSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9zdmc+';
   const gameList = [...gameMap.values()].sort((a,b)=>b.latest-a.latest || a.title.localeCompare(b.title,'vi'));
   const gameOrder = new Map(gameList.map((game,i)=>[game.key,i]));
   const sectionOrder = new Map(sections.map((section,i)=>[section.id,i]));
@@ -2238,15 +2153,15 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       tile.setAttribute('aria-pressed','false');
       tile.setAttribute('aria-label',`Xem các phiên bản ${game.title}`);
       tile.innerHTML = '<img class="ns-game-tile-image" loading="lazy" alt=""><span class="ns-game-tile-info"><strong></strong><span class="ns-game-tile-updated"></span><span class="ns-game-tile-bottom"><small></small><span class="ns-game-tile-fresh"></span></span></span>';
-      const iconSrc = game.overrideCover || game.latestCard?.querySelector('.app-icon')?.getAttribute('src') || game.latestCard?.querySelector('.app-media img')?.getAttribute('src') || (game.key === 'valorant' ? valorantFallbackImage : '');
+      const iconSrc = game.latestCard?.querySelector('.app-icon')?.getAttribute('src') || game.overrideCover || game.latestCard?.querySelector('.app-media img')?.getAttribute('src') || '';
       const img = tile.querySelector('img');
       if (iconSrc) img.src = iconSrc;
       img.alt = game.title;
       tile.querySelector('.ns-game-tile-fresh').textContent = i===0 ? 'Mới nhất' : '';
       if (i!==0) tile.querySelector('.ns-game-tile-fresh').hidden = true;
       tile.querySelector('.ns-game-tile-info strong').textContent = game.title;
-      tile.querySelector('.ns-game-tile-updated').textContent = game.cards.length ? (game.latestCard && getUpdatedInfo(game.latestCard) ? `Cập nhật ${getUpdatedInfo(game.latestCard).short}` : 'Chưa rõ ngày cập nhật') : 'Đang cập nhật phiên bản';
-      tile.querySelector('.ns-game-tile-bottom small').textContent = game.cards.length ? `${game.cards.length} phiên bản` : 'CHƯA CÓ BẢN TẢI';
+      tile.querySelector('.ns-game-tile-updated').textContent = game.latestCard && getUpdatedInfo(game.latestCard) ? `Cập nhật ${getUpdatedInfo(game.latestCard).short}` : 'Chưa rõ ngày cập nhật';
+      tile.querySelector('.ns-game-tile-bottom small').textContent = `${game.cards.length} phiên bản`;
       gamePickerGrid.append(tile);
       gameTiles.set(game.key,tile);
     });
@@ -2346,10 +2261,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       if(show) visible++;
     });
     gameTiles.forEach((tile,key)=>{
-      const entry = gameMap.get(key);
-      const gameText = [entry.title, entry.short, entry.aliases, entry.key].map(normalize).join(' ');
-      const gameNameMatch = gameText.includes(query);
-      tile.hidden=Boolean(query)&&!gameNameMatch&&!entry.cards.some(card=>queryMatchesCard(card,query));
+      tile.hidden=Boolean(query)&&!gameMap.get(key).cards.some(card=>queryMatchesCard(card,query));
     });
     const visibleTiles=[...gameTiles.values()].filter(tile=>!tile.hidden).length;
     const noResults=document.getElementById('nsGamePickerNoResults');
@@ -2382,18 +2294,9 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       if(badge) badge.textContent=latestDate?`↗ MỚI NHẤT: ${latestDate.short}`:'';
     });
     if(showResults) sortSectionsByDisplayedApps();
-    if (emptyState) {
-      const selectedEmpty = browseMode === 'game' && (gameMap.get(activeGame)?.cards.length || 0) === 0;
-      emptyState.hidden = !selectedEmpty;
-      if (selectedEmpty) {
-        const heading = emptyState.querySelector('strong');
-        const note = emptyState.querySelector('span');
-        if (heading) heading.textContent = `${gameMap.get(activeGame)?.title || 'Game'} — chưa có bản tải`;
-        if (note) note.textContent = 'Danh mục đã hoạt động. Khi thêm card thật với data-game="valorant", bản tải sẽ tự xuất hiện tại đây.';
-      }
-    }
+    if(emptyState) emptyState.hidden=true; // Không mở bảng lỗi rườm rà.
     if(searchStatus){
-      searchStatus.textContent=query?`Tìm thấy ${visibleTiles} game phù hợp • Chọn ảnh game để xem bản tải`:`${gameList.length} danh mục game • Chọn game để xem các bản tải`;
+      searchStatus.textContent=query?`Tìm thấy ${visibleTiles} game phù hợp • Chọn ảnh game để xem bản tải`:`${gameList.length} game có sẵn • Chọn ảnh game để xem bản tải`;
     }
     syncGameButtons();
   };
@@ -2554,7 +2457,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     recent.forEach(({card, date}, index) => {
       const item = document.createElement('article');
       item.className = 'ns-latest-card';
-      const title = card.querySelector('h3')?.textContent?.trim() || card.dataset.name || 'Ứng dụng NSMOD';
+      const title = card.querySelector('h3')?.textContent?.trim() || card.dataset.name || 'Ứng dụng HAXTOP';
       const label = card.querySelector('.app-title-row p')?.textContent?.trim() || 'Bản cập nhật mới';
       const cover = card.querySelector('.app-media img')?.getAttribute('src') || '';
       const type = card.dataset.platform === 'android' ? 'Android' : 'iOS';
@@ -2615,7 +2518,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     if (!body || body.querySelector('.ns-social-actions')) return;
     const el = document.createElement('div');
     el.className = 'ns-social-actions';
-    el.innerHTML = `<button type="button" class="ns-favorite" data-social="favorite" data-id="${card.id}" aria-pressed="false" aria-label="Lưu vào yêu thích"><span class="ns-action-icon">${heartSVG}</span><span class="ns-action-label">Yêu thích</span></button><a class="ns-report-action" href="${ERROR_REPORT_URL}" target="_blank" rel="noopener noreferrer" title="Báo link lỗi tới Telegram Admin @sonchoigame123">⚑ <span>Báo lỗi link</span></a>`;
+     el.innerHTML = `<button type="button" class="ns-favorite" data-social="favorite" data-id="${card.id}" aria-pressed="false" aria-label="Lưu vào yêu thích"><span class="ns-action-icon">${heartSVG}</span><span class="ns-action-label">Yêu thích</span></button><a class="ns-report-action safe-preview-disabled" href="${ERROR_REPORT_URL}" aria-disabled="true" data-safe-preview="disabled" title="Báo link lỗi tới Telegram Admin HAXTOP">⚑ <span>Báo lỗi link</span></a>`;
     const info = document.createElement('div');
     info.className = 'ns-community-info';
     info.innerHTML = `<span class="ns-report-help">Link tải gặp sự cố? Hãy nhấn Báo lỗi link để Admin kiểm tra.</span>`;
@@ -2733,7 +2636,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       img.loading = 'lazy'; img.alt = '';
       img.src = card.querySelector('.app-media img')?.getAttribute('src') || '';
       const info = document.createElement('span'); info.className = 'ns-recent-info';
-      const title = document.createElement('strong'); title.textContent = card.querySelector('h3')?.textContent?.trim() || 'NSMOD';
+      const title = document.createElement('strong'); title.textContent = card.querySelector('h3')?.textContent?.trim() || 'HAXTOP';
       const type = document.createElement('small'); type.textContent = `${card.dataset.platform === 'android' ? 'Android' : 'iOS'} · ${card.dataset.access === 'key' ? 'Có Key' : 'No Key'}`;
       const prompt = document.createElement('em'); prompt.textContent = 'Mở ứng dụng →';
       info.append(title,type,prompt); link.append(img,info); recentGrid.append(link);
@@ -2789,25 +2692,25 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     const willOpen = !!musicActions?.hidden;
     if(musicActions) musicActions.hidden = !willOpen;
     musicToggle.setAttribute('aria-expanded', String(willOpen));
-    musicToggle.setAttribute('aria-label', willOpen ? 'Đóng điều khiển nhạc NSMOD' : 'Mở điều khiển nhạc NSMOD');
+    musicToggle.setAttribute('aria-label', willOpen ? 'Đóng điều khiển nhạc HAXTOP' : 'Mở điều khiển nhạc HAXTOP');
   });
   document.addEventListener('click', event => {
     if(!event.target.closest('.ns-music-mini') && musicActions && !musicActions.hidden){
       musicActions.hidden=true;
       musicToggle?.setAttribute('aria-expanded','false');
-      musicToggle?.setAttribute('aria-label','Mở điều khiển nhạc NSMOD');
+      musicToggle?.setAttribute('aria-label','Mở điều khiển nhạc HAXTOP');
     }
   });
   document.addEventListener('keydown', event => {
     if(event.key==='Escape' && musicActions && !musicActions.hidden){
       musicActions.hidden=true;
       musicToggle?.setAttribute('aria-expanded','false');
-      musicToggle?.setAttribute('aria-label','Mở điều khiển nhạc NSMOD');
+      musicToggle?.setAttribute('aria-label','Mở điều khiển nhạc HAXTOP');
       musicToggle?.focus();
     }
   });
   // SỬA LINK NHẠC MẶC ĐỊNH TẠI ĐÂY (KHÔNG SỬ DỤNG list=RD...):
-  const NS_DEFAULT_MUSIC = 'https://www.youtube.com/watch?v=DRGy_rObJiI';
+  const NS_DEFAULT_MUSIC = '';
   const musicSetStatus = (message, kind='') => {
     if(!musicStatus) return;
     musicStatus.textContent=message;
@@ -2848,7 +2751,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
       return;
     }
     if(musicFrame){
-      musicFrame.src=data.src;
+      musicSetStatus('Nhạc ngoài đã tắt trong bản preview.','error'); return;
       musicFrame.hidden=false;
     }
     if(musicPlaceholder) musicPlaceholder.hidden=true;
@@ -2886,7 +2789,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
     musicSetStatus('Đã tắt nhạc.');
   });
   // Tự thử phát khi truy cập, KHÔNG bắt người xem chọn nhạc trước khi vào web.
-  startMusic(NS_DEFAULT_MUSIC,true);
+  musicSetStatus('Nhạc ngoài đã tắt trong bản preview.');
 
   const pageViews = [...document.querySelectorAll('[data-view]')];
   const pageLinks = [...document.querySelectorAll('[data-page-link]')];
