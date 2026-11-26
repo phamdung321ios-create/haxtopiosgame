@@ -2,7 +2,7 @@
 
 <html lang="vi">
 <head>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; frame-src 'none'; connect-src 'self'; media-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; frame-src 'none'; connect-src 'self'; media-src 'none'; object-src 'none'; form-action 'none'; base-uri 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -1135,7 +1135,23 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 
 
 .safe-preview-disabled { opacity: .55 !important; cursor: not-allowed !important; pointer-events: none !important; }
-</style>
+
+/* Telegram-managed catalog cards */
+    .telegram-catalog-section { margin-top: 34px; scroll-margin-top: 104px; }
+    .telegram-catalog-status { color: var(--muted); font-size: .9rem; margin: 0 0 16px; }
+    .telegram-catalog-grid { margin-top: 18px; }
+    .telegram-catalog-card { display: flex; flex-direction: column; }
+    .telegram-card-image { aspect-ratio: 16 / 8.2; display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 50% 35%, rgba(108,240,194,.14), transparent 62%), #0c1117; }
+    .telegram-card-image img { width: 100%; height: 100%; object-fit: cover; }
+    .telegram-card-placeholder { color: var(--accent); font-size: 1rem; font-weight: 900; letter-spacing: .16em; }
+    .telegram-card-copy { display: grid; gap: 12px; padding: 18px; }
+    .telegram-card-meta { color: var(--accent); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .telegram-card-title { margin: 0; color: var(--text); font: 800 1.05rem/1.3 'Space Grotesk', Inter, sans-serif; }
+    .telegram-card-description { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.6; }
+    .telegram-card-link { display: inline-flex; width: fit-content; align-items: center; justify-content: center; border: 1px solid rgba(108,240,194,.22); border-radius: 999px; padding: 10px 15px; background: rgba(108,240,194,.1); color: #c9fae8; font-size: .76rem; font-weight: 800; }
+    .telegram-card-link:hover { background: rgba(108,240,194,.16); }
+    @media (max-width: 680px) { .telegram-card-copy { padding: 15px; } }
+    </style>
 </head>
 <body>
 <div aria-hidden="true" class="noise"></div>
@@ -1362,7 +1378,20 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 <!-- Ví dụ: data-updated="2026-11-04T21:30" => hiện 04/11/2026 • 21:30 và sắp xếp theo giờ. -->
 <!-- Ngày cũ dạng YYYY-MM-DD vẫn chạy; không tự đoán giờ cho những bản cũ. -->
 <!-- ===== iOS • 1 KEY DÙNG ALL BẢN ===== -->
-<div class="ns-category-section group-key" id="ios-key" data-section="group-key">
+
+<section class="telegram-catalog-section" id="telegramCatalog" hidden>
+      <div class="ns-category-head">
+        <div class="ns-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="4" width="7" height="7" rx="1.5"></rect><rect x="4" y="13" width="7" height="7" rx="1.5"></rect><rect x="13" y="13" width="7" height="7" rx="1.5"></rect></svg></div>
+        <div class="ns-category-heading">
+          <div class="ns-category-eyebrow">CẬP NHẬT QUA TELEGRAM <span class="ns-count" id="telegramCatalogCount">0</span></div>
+          <h2>Thẻ mới</h2>
+          <p>Các game và ứng dụng vừa được thêm vào catalog.</p>
+        </div>
+      </div>
+      <p class="telegram-catalog-status" id="telegramCatalogStatus" aria-live="polite"></p>
+      <div class="app-grid telegram-catalog-grid" id="telegramCatalogGrid"></div>
+    </section>
+    <div class="ns-category-section group-key" id="ios-key" data-section="group-key">
   <div class="ns-category-head">
     <div class="ns-section-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"></circle><path d="m11 12 8-8M16 7l2 2M14 9l2 2"></path></svg></div>
     <div class="ns-category-heading">
@@ -2848,5 +2877,87 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 })();
 
 </script>
-</body>
+
+<script>
+    (() => {
+      const section = document.getElementById('telegramCatalog');
+      const grid = document.getElementById('telegramCatalogGrid');
+      const status = document.getElementById('telegramCatalogStatus');
+      const count = document.getElementById('telegramCatalogCount');
+      const safeHttps = value => {
+        if (typeof value !== 'string' || value.length > 500) return null;
+        try { const url = new URL(value); return url.protocol === 'https:' && !url.username && !url.password ? url.href : null; }
+        catch { return null; }
+      };
+      const text = (value, limit) => typeof value === 'string' ? value.trim().slice(0, limit) : '';
+      const renderItem = item => {
+        const name = text(item.name, 80);
+        const game = text(item.game, 80);
+        const platform = text(item.platform, 24);
+        const description = text(item.description, 600);
+        const downloadUrl = safeHttps(item.downloadUrl);
+        if (!name || !game || !platform || !downloadUrl) return null;
+
+        const card = document.createElement('article');
+        card.className = 'app-card telegram-catalog-card';
+        const imageBox = document.createElement('div');
+        imageBox.className = 'telegram-card-image';
+        const imageUrl = safeHttps(item.imageUrl);
+        if (imageUrl) {
+          const image = document.createElement('img');
+          image.src = imageUrl;
+          image.alt = name;
+          image.loading = 'lazy';
+          image.referrerPolicy = 'no-referrer';
+          imageBox.append(image);
+        } else {
+          const placeholder = document.createElement('span');
+          placeholder.className = 'telegram-card-placeholder';
+          placeholder.textContent = 'HAXTOP';
+          imageBox.append(placeholder);
+        }
+
+        const copy = document.createElement('div');
+        copy.className = 'telegram-card-copy';
+        const meta = document.createElement('div');
+        meta.className = 'telegram-card-meta';
+        meta.textContent = game + ' · ' + platform;
+        const title = document.createElement('h3');
+        title.className = 'telegram-card-title';
+        title.textContent = name;
+        const descriptionNode = document.createElement('p');
+        descriptionNode.className = 'telegram-card-description';
+        descriptionNode.textContent = description;
+        const link = document.createElement('a');
+        link.className = 'telegram-card-link';
+        link.href = downloadUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'Mở liên kết tải';
+        copy.append(meta, title, descriptionNode, link);
+        card.append(imageBox, copy);
+        return card;
+      };
+
+      fetch('./data/telegram-catalog.json', { cache: 'no-store' })
+        .then(response => {
+          if (!response.ok) throw new Error('catalog unavailable');
+          return response.json();
+        })
+        .then(payload => {
+          if (!payload || !Array.isArray(payload.items)) throw new Error('invalid catalog');
+          const cards = payload.items.map(renderItem).filter(Boolean);
+          if (!cards.length) return;
+          count.textContent = String(cards.length);
+          grid.replaceChildren(...cards);
+          status.textContent = '';
+          section.hidden = false;
+        })
+        .catch(() => {
+          status.textContent = 'Không tải được danh sách thẻ mới. Vui lòng thử tải lại trang sau.';
+          section.hidden = false;
+        });
+    })();
+    </script>
+    </body>
 </html>
